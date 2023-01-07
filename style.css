@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Heebo', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+/* -------------media quewry for menu--------------- */
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        /* text-align: center; */
+        top: 130px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        background: #333;
+        transition: max-height  0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        
+    }
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 55px;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px ;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.2s ;
+}
+.btn:hover{
+    background: #563434;
+}
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.header .row{
+    margin-top: 70px;
+}
+.categories{
+    margin: 0px 0;
+    padding: 100px;
+    background-color: black;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    padding: 5px;
+    background-color: white;
+}
+.featured-products{
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px ;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.2s ;
+}
+.featured-products:hover{
+    background: #563434;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+.col-4:hover{
+        transform: translateY(-5px);
+}
+.pic{
+    padding: 5px;
+    /* background-color: black; */
+   height: 198px;
+}
+.pic-1{
+    padding: 5px;
+    /* background-color: black; */
+    height: 198px;
+    /* width: 118px; */
+}
+.pic-2{
+    padding: 5px;
+    /* background-color: black; */
+    height: 198px;
+    margin-top: 25px;
+}
+.rating .fa{
+    color: orangered;
+}
+.offer{
+    background: radial-gradient(#fff,#ffd6d6);
+    margin: 0px 5px; 
+}
+/* ------------------brands----------------- */
+.brands{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+}
+.col-5 img:hover{
+    filter: grayscale(0%);
+    transform: translateY(-5px);
+} 
+/* -------------footer----------- */
+.footer{
+    background-color: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+
+}
+.footer p{
+    color: #8a8a8a;
+
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+.footer-col-1, .footer-col-2, .footer-col-3{
+min-width: 250px;
+margin-bottom: 20px;
+}
+.footer-col-1{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-1 img{
+    width: 180px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.footer-col-2,.footer-col-3{
+    flex-basis: 30%;
+    text-align: center;
+}
+.footer-col-3 ul{
+    list-style-type: none;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+/* media query for less than 600 screen sixe */
+@media only screen and (max-width: 800px){
+    .row{
+        text-align: center;
+
+    }
+    .col-2, .col-3,.col-4{
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+
